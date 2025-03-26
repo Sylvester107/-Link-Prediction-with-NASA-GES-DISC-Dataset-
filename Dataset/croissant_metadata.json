@@ -1,0 +1,197 @@
+{
+    "title": "NASA GES-DISC Knowledge Graph for Link Prediction",
+    "description": "This dataset contains a knowledge graph of NASA GES-DISC collections, including datasets, data centers, projects, platforms, instruments, science keywords, and publications, along with the relationships between them. It is specifically designed for link prediction tasks.",
+    "keywords": [
+        "NASA",
+        "GES-DISC",
+        "GESDISC",
+        "knowledge graph",
+        "link prediction",
+        "metadata",
+        "publications",
+        "science keywords",
+        "datasets",
+        "satellite observation",
+        "remote sensing",
+        "climate change",
+        "machine learning",
+        "knowledge graph"
+    ],
+    "creators": [
+        {
+            "name": "Armin Mehrabian",
+            "affiliation": "NASA GES-DISC",
+            "email": "armin.mehrabian@nasa.gov"
+        },
+        {
+            "name": "Irina Gerasimov",
+            "affiliation": "NASA GES-DISC",
+            "email": "irina.gerasimov@nasa.gov"
+        }
+    ],
+    "contributors": [],
+    "version": "1.0",
+    "license": "CC BY 4.0",
+    "datasetDOI": "10.5281/zenodo.11492533",
+    "publicationDate": "2024-06-05",
+    "relatedWorks": [],
+    "variables": [
+        {
+            "type": "Dataset",
+            "properties": [
+                {
+                    "name": "globalId",
+                    "description": "Unique identifier for the dataset"
+                },
+                {
+                    "name": "daac",
+                    "description": "Data archive center"
+                },
+                {
+                    "name": "abstract",
+                    "description": "Brief summary of the dataset"
+                },
+                {
+                    "name": "shortName",
+                    "description": "Abbreviated name of the dataset"
+                },
+                {
+                    "name": "doi",
+                    "description": "Digital Object Identifier for the dataset"
+                },
+                {
+                    "name": "longName",
+                    "description": "Full name of the dataset"
+                }
+            ]
+        },
+        {
+            "type": "DataCenter",
+            "properties": [
+                {
+                    "name": "globalId",
+                    "description": "Unique identifier for the data center"
+                },
+                {
+                    "name": "shortName",
+                    "description": "Abbreviated name of the data center"
+                },
+                {
+                    "name": "url",
+                    "description": "URL of the data center"
+                },
+                {
+                    "name": "longName",
+                    "description": "Full name of the data center"
+                }
+            ]
+        },
+        {
+            "type": "Project",
+            "properties": [
+                {
+                    "name": "globalId",
+                    "description": "Unique identifier for the project"
+                },
+                {
+                    "name": "shortName",
+                    "description": "Abbreviated name of the project"
+                },
+                {
+                    "name": "longName",
+                    "description": "Full name of the project"
+                }
+            ]
+        },
+        {
+            "type": "Platform",
+            "properties": [
+                {
+                    "name": "globalId",
+                    "description": "Unique identifier for the platform"
+                },
+                {
+                    "name": "Type",
+                    "description": "Type of the platform (e.g., satellite, aircraft)"
+                },
+                {
+                    "name": "shortName",
+                    "description": "Abbreviated name of the platform"
+                },
+                {
+                    "name": "longName",
+                    "description": "Full name of the platform"
+                }
+            ]
+        },
+        {
+            "type": "Instrument",
+            "properties": [
+                {
+                    "name": "globalId",
+                    "description": "Unique identifier for the instrument"
+                },
+                {
+                    "name": "shortName",
+                    "description": "Abbreviated name of the instrument"
+                },
+                {
+                    "name": "longName",
+                    "description": "Full name of the instrument"
+                }
+            ]
+        },
+        {
+            "type": "ScienceKeyword",
+            "properties": [
+                {
+                    "name": "globalId",
+                    "description": "Unique identifier for the science keyword"
+                },
+                {
+                    "name": "name",
+                    "description": "Name of the science keyword"
+                }
+            ]
+        },
+        {
+            "type": "Publication",
+            "properties": [
+                {
+                    "name": "globalId",
+                    "description": "Unique identifier for the publication"
+                },
+                {
+                    "name": "Title",
+                    "description": "Title of the publication"
+                },
+                {
+                    "name": "Year",
+                    "description": "Year of publication"
+                },
+                {
+                    "name": "DOI",
+                    "description": "Digital Object Identifier for the publication"
+                }
+            ]
+        }
+    ],
+    "formats": [
+        "CSV"
+    ],
+    "size": "3.2 MB",
+    "structure": {
+        "nodes": "nodes.csv",
+        "edges": "train_edges.csv",
+        "validation_edges": "val_links.csv",
+        "test_edges": "test_links.csv"
+    },
+    "source": "NASA GES-DISC",
+    "collectionMethod": "Metadata aggregation and publication citation tracking",
+    "processingSteps": "Data cleaning and integration",
+    "funding": "NASA GES-DISC",
+    "intendedUse": "Machine learning research and link prediction tasks",
+    "limitations": "Limited to GES-DISC data collections and publications citing NASA GES-DISC datasets",
+    "accessInstructions": "Download from NASA GES-DISC repository at [NASA GES-DISC](https://disc.gsfc.nasa.gov/)",
+    "citationInstructions": "Please cite this dataset as: Mehrabian, A., & Gerasimov, I. (2024). NASA GES-DISC Knowledge Graph for Link Prediction (1.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.11492533"
+}
