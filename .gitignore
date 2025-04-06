@@ -6,3 +6,5 @@ ask.py
 failed_tests.ipynb
 all.py
 description.txt
+pycache
+__pycache__
