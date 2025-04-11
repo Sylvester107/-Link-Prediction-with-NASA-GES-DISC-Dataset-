@@ -1,5 +1,5 @@
 
-# 🔍 Project Documentation: Link Prediction Using GCN and Random Walk (PPR)
+# 🔍 Link Prediction Using GCN and Random Walk (PPR)
 
 
 ## 📁 **1. Data Preparation**
